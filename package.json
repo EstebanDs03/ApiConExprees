@@ -1,0 +1,27 @@
+{
+  "name": "api-exprees",
+  "version": "1.0.0",
+  "description": "Mi primera api con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanDs03/Api-Exprees.git"
+  },
+  "keywords": [
+    "javascrip",
+    "exprees",
+    "node"
+  ],
+  "author": "Juan Esteban Arbelaez Durango",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstebanDs03/Api-Exprees/issues"
+  },
+  "homepage": "https://github.com/EstebanDs03/Api-Exprees#readme",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
