@@ -1,11 +1,22 @@
-const http = require('node:http');
+const http = require("node:http");
 
 const desiredPort = process.env.PORT ?? 1234;
 
-const server = http.createServer((req, res) => {
-  console.log("request server", req.url);
-  res.end("Hola mundo");
-});
+const processRequest = (req, res) => {
+  res.setHeader("Content-Type", "text/html");
+  if (req.url == "/") {
+    res.statusCode = 200;
+
+    res.end("<h1>Bienevnido a mi pagina de incio</h1>");
+  } else if (req.url == "/contacto") {
+    res.end("<h1>Mi pagina Conatcto</h1>");
+  } else {
+    res.statusCode == 404;
+    res.end("<h1>404</h1>");
+  }
+};
+
+const server = http.createServer(processRequest);
 
 server.listen(desiredPort, () => {
   console.log(`server listening on port http://localhost:${desiredPort}`);
