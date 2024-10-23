@@ -4,6 +4,7 @@
   "description": "Mi primera api con express",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon http.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/EstebanDs03/Api-Exprees#readme",
   "devDependencies": {
+    "nodemon": "^3.1.7",
     "standard": "^17.1.2"
   }
 }
