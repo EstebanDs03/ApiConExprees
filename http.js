@@ -25,7 +25,7 @@ const processRequest = (req, res) => {
     res.setHeader("Content-Type", "image/img.png");
 
     // Lee el archivo de imagen del sistema de archivos
-    fs.readFile("./image.png", (err, data) => {
+    fs.readFile("./img/image.png", (err, data) => {
       // Si ocurre un error al leer el archivo, responde con un error 500 (Error del servidor)
       if (err) {
         res.statusCode = 500;
