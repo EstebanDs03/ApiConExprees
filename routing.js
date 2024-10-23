@@ -28,22 +28,16 @@ const processRequest = (req, res) => {
             body += chunk.toString();
           });
 
-          req.on('end', ()=>{
-            const data = JSON.parse(body)
-            res.writeHead(201, {'Content-Type': 'application/json; charset=utf-8'})
-            res.end(JSON.stringify(data))
-          })
-          break
-        }
-        case "/otro": {
-          let body = " ";
+          req.on("end", () => {
+            const data = JSON.parse(body);
+            res.writeHead(201, {
+              "Content-Type": "application/json; charset=utf-8",
+            });
+            res.end(JSON.stringify(data));
+          });
+          break;
         }
       }
-    // default: {
-    //   res.statusCode = 404;
-    //   res.setHeader("Content-Type", "text/html; charset=utf-8");
-    //   return res.end("<h1>Error 404</h1>");
-    // }
   }
 };
 

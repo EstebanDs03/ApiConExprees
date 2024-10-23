@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Mi primera api con express",
   "main": "index.js",
+  "type": "module",
+  
   "scripts": {
     "dev:1": "nodemon http.js",
     "dev:2": "nodemon routing.js",
